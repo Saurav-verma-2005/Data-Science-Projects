@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Data files (Large/Local)
+data/videos/
+data/audios/
+data/jsons/
+*.joblib
+
+# Output logs
+outputs/prompt.txt
+outputs/response.txt
+
+# Environments
+venv/
+.env
