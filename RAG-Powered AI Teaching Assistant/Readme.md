@@ -26,20 +26,17 @@ The project follows a modular **ETL (Extract, Transform, Load)** and **RAG** wor
 ## 📁 Repository Structure
 ```text
 AI-Assistant-RAG/
-├── data/               # Project data (Ignored by Git)
-│   ├── videos/         # Raw .mp4 lecture files
-│   ├── audios/         # Extracted .mp3 files
-│   └── jsons/          # Timestamped transcriptions
-├── models/             
-│   └── embeddings.joblib # Generated vector database
-├── src/                # Source code
-│   ├── 01_extraction.py    # Video to Audio processing
-│   ├── 02_transcription.py # Whisper AI implementation
-│   ├── 03_embedding.py     # Vectorization & Joblib export
-│   └── chatbot.py          # RAG query logic & LLM integration
-├── .gitignore          # Filters out heavy media files
-├── README.md           # Project documentation
-└── requirements.txt    # Python dependencies
+├── src/                        # Core logic scripts
+│   ├── video_to_mp3.py         # Converts videos to audio
+│   ├── mp3_to_json.py          # Transcribes audio via Whisper
+│   ├── preprocess_json.py      # Creates vector embeddings
+│   └── process_incoming.py     # Main RAG inference script
+├── outputs/                    # For logging/debugging
+│   ├── prompt.txt
+│   └── response.txt
+├── .gitignore                  # Keeps large data files off GitHub
+├── README.md                   # Project documentation
+└── requirements.txt            # Python dependencies
 ```
 # How to use this RAG AI Teaching assistant on your own data
 ## Step 1 - Collect your videos
