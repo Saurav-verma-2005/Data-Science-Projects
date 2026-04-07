@@ -5,7 +5,7 @@ This repository contains an end-to-end Machine Learning project focused on predi
 ## Project Overview
 The goal is to use various district-level features (population, median income, etc.) to predict the `median_house_value`. This project demonstrates how to handle real-world data challenges like missing values and categorical attributes.
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Language:** Python
 - **Libraries:** Pandas, NumPy, Scikit-Learn, Matplotlib
 - **Tools:** Jupyter Notebooks, GitHub
