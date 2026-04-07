@@ -40,7 +40,7 @@ AI-Assistant-RAG/
 ├── .gitignore          # Filters out heavy media files
 ├── README.md           # Project documentation
 └── requirements.txt    # Python dependencies
-
+```
 # How to use this RAG AI Teaching assistant on your own data
 ## Step 1 - Collect your videos
 Move all your video files to the videos folder
